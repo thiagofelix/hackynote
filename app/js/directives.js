@@ -10,9 +10,7 @@ angular.module('hn.directives', []).
       transclude: true,
       replace: true,
       templateUrl: 'partials/editor/editor.html',
-      scope:{
-        markdown: "="
-      }
+      scope:{ markdown: "=" }
     };
   }]).
   directive('preview',['$timeout', '$slides', function($timeout, $slides){
@@ -22,10 +20,8 @@ angular.module('hn.directives', []).
       transclude: true,
       replace: true,
       templateUrl: 'partials/preview/preview.html',
-      scope:{
-        markdown: "="
-      },
-      link: function(scope, element) {
+      scope:{ markdown: "=" },
+      link: function(scope) {
 
         $(document).bind('deck.change', function(event, from, to){
           currentSlide = to;

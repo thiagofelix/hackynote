@@ -53,20 +53,20 @@ angular.module('hn.services', []).
    * $slides service
    */
   service('$slides',['$markdown', function($markdown){
-    function extractSlidesFromMarkdown(markdownText){
-      var contents = markdownText.split("\n\n\n");
-      return contents;
+    function mapEachSlide(slides, mapperFunction){
+      return angular.map(slides, mapperFunction);
+    }
+    function breakToSlides(markdown){
+      return markdown.split("\n\n\n");
+    }
+    function toObject(slideContent){
+      return { html: $markdown.makeHtml(slideContent) };
     }
 
-    this.fromMarkdown = function(markdownText) {
-      var slides = [];
-          slidesContents = extractSlidesFromMarkdown(markdownText);
+    this.fromMarkdown = function(markdown) {
+      var slides = breakToSlides(markdown);
 
-      angular.forEach(slidesContents, function(slideContent){
-        slides.push({ html: $markdown.makeHtml(slideContent) });
-      });
-
-      return slides;
+      return mapEachSlide(slides, toObject);
     };
 
   }]);
