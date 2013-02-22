@@ -1,0 +1,8 @@
+{
+  "name": "showdown",
+  "version": "0.3.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coreyti/showdown.git"
+  }
+}

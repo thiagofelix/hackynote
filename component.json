@@ -1,0 +1,10 @@
+{
+  "name": "HackyNote",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "~2.3.0",
+    "deck.js": "latest",
+    "showdown": "~0.3.1",
+    "marked": "~0.2.8"
+  }
+}

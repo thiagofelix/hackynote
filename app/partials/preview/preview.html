@@ -1,0 +1,15 @@
+<div id="preview">
+    <article class="deck-container">
+      <section class="slide" ng-repeat="slide in slides">
+        <div ng-bind-html="slide.html"></div>
+      </section>
+      <a href="#how-to-overview" class="deck-prev-link" title="Previous">←</a>
+      <a href="#themes" class="deck-next-link" title="Next">→</a>
+      <!-- deck.status snippet -->
+      <p class="deck-status">
+        <span class="deck-status-current"></span>
+        /
+        <span class="deck-status-total"></span>
+      </p>
+    </article>
+</div>

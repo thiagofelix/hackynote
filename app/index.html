@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" ng-app="hn">
+<head>
+  <meta charset="utf-8">
+  <title>Hacky Note - Easy slide presentations</title>
+
+  <!-- Deck.js -->
+  <!-- Core and extension CSS files -->
+  <link rel="stylesheet" href="lib/deck.js/core/deck.core.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/goto/deck.goto.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/menu/deck.menu.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/navigation/deck.navigation.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/status/deck.status.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/hash/deck.hash.css">
+  <link rel="stylesheet" href="lib/deck.js/extensions/scale/deck.scale.css">
+
+  <!-- Style theme. More available in /themes/style/ or create your own. -->
+  <!-- <link rel="stylesheet" href="lib/deck.js/themes/style/web-2.0.css"> -->
+  <link rel="stylesheet" href="themes/dclick-1.0.css">
+
+  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+  <link rel="stylesheet" href="lib/deck.js/themes/transition/horizontal-slide.css">
+
+  <!--App-->
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/app.css"/>
+
+  <script src="lib/deck.js/modernizr.custom.js"></script>
+
+</head>
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container-fluid">
+        <a class="brand" href="#project">Hacky Note</a>
+        <ul class="nav">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="main-container">
+    <div ng-view></div>
+  </div>
+
+  <div>HackyNote version: <span app-version></span></div>
+
+
+  <!-- Deck.js -->
+  <!-- Dependencies -->
+  <script src="lib/jquery/jquery.js"></script>
+  <!-- Deck Core and extensions -->
+  <script src="lib/deck.js/core/deck.core.js"></script>
+  <!-- <script src="lib/deck.js/extensions/hash/deck.hash.js"></script> -->
+  <script src="lib/deck.js/extensions/menu/deck.menu.js"></script>
+  <script src="lib/deck.js/extensions/goto/deck.goto.js"></script>
+  <script src="lib/deck.js/extensions/status/deck.status.js"></script>
+  <script src="lib/deck.js/extensions/navigation/deck.navigation.js"></script>
+
+  <!-- Markdown Parsers -->
+  <script src="lib/showdown/compressed/showdown.js"></script>
+  <script src="lib/marked/lib/marked.js"></script>
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.4/angular.min.js"></script>
+  -->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-sanitize.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+
+</body>
+</html>
