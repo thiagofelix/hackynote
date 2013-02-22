@@ -4996,7 +4996,7 @@ body,
 }
 #editor,
 #preview {
-  top: 40px;
+  top: 79px;
   bottom: 0;
   position: fixed;
   box-sizing: border-box;
@@ -5012,8 +5012,8 @@ body,
   width: 33%;
   right: 0;
   background-color: #f1f1f1;
-  box-shadow: -1px 0 6px rgba(0, 0, 0, 0.15);
   padding: 5px;
+  border-top: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
 }
@@ -5037,9 +5037,16 @@ body,
   -moz-box-shadow: 0px;
   box-shadow: 0px;
 }
+#theme-menu .dropdown {
+  display: inline-block;
+  margin: 0 10px;
+}
 .no-focus:focus {
   webkit-box-shadow: inset 0 0 0 !important;
   -moz-box-shadow: inset 0 0 0 !important;
   box-shadow: inset 0 0 0 !important;
   border: none;
+}
+li.no-style {
+  list-style: none;
 }
