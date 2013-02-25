@@ -6,3 +6,5 @@ build.xml
 .project
 .settings
 .idea/*
+
+/npm-debug.log
