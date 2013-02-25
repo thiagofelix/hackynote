@@ -8,6 +8,7 @@ files = [
   //
   //
   'lib/**/showdown.js',
+  'lib/**/marked.js',
 
   // App & Angular
   //
@@ -27,7 +28,13 @@ autoWatch = true;
 
 browsers = ['Chrome'];
 
-junitReporter = {
-  outputFile: 'test_out/unit.xml',
-  suite: 'unit'
+preprocessors = {
+  'js/**/*.js': 'coverage'
+};
+
+reporters = ['progress', 'coverage'];
+
+coverageReporter = {
+  type: 'html',
+  dir: '../coverage/'
 };
