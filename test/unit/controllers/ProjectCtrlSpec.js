@@ -1,11 +1,11 @@
 
-describe('Given a Project Controller', function(){
+describe('Given the Editor Controller', function(){
   beforeEach(module('hn.controllers'));
 
   var ctrl, scope;
 
   beforeEach(inject(function($controller) {
-    ctrl = $controller('ProjectCtrl', {$scope: scope = {}});
+    ctrl = $controller('EditorCtrl', {$scope: scope = {}});
   }));
 
   it('contain editor.markdown on the scope', function() {
