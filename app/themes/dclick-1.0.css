@@ -72,12 +72,10 @@
  *
  *
  */
-.deck-container .slide:last-of-type,
 .deck-container .slide:first-of-type,
 .deck-container .slide.introduction {
   text-align: center;
 }
-.deck-container .slide:last-of-type div,
 .deck-container .slide:first-of-type div,
 .deck-container .slide.introduction > div {
   padding-top: 0;
@@ -91,12 +89,10 @@
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
 }
-.deck-container .slide:last-of-type hgroup,
 .deck-container .slide:first-of-type hgroup,
 .deck-container .slide.introduction hgroup {
   margin-bottom: 32px;
 }
-.deck-container .slide:last-of-type h1,
 .deck-container .slide:first-of-type h1,
 .deck-container .slide.introduction h1 {
   position: static;
@@ -111,7 +107,6 @@
   transform: none;
   text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.2);
 }
-.deck-container .slide:last-of-type h2,
 .deck-container .slide:first-of-type h2,
 .deck-container .slide.introduction h2 {
   font-size: 24px;
