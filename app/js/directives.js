@@ -13,6 +13,27 @@ HN.directive('editor',[function(){
   };
 }]);
 
+HN.directive('aceEditor',[function(){
+  return {
+    restrict: 'EA',
+    require: 'ngModel',
+    link: function(scope, element, attr, ngModel){
+      var editor = ace.edit(element[0]);
+      editor.setTheme("ace/theme/tomorrow");
+      editor.getSession().setMode("ace/mode/markdown");
+      editor.getSession().on('change',function(){
+        scope.$apply(function(){
+          ngModel.$setViewValue(editor.getSession().getValue());
+        });
+      });
+
+      ngModel.$render = function(){
+        editor.getSession().setValue(ngModel.$viewValue);
+      };
+    }
+  };
+}]);
+
 HN.directive('preview',['$timeout', '$slides', function($timeout, $slides){
   var currentSlide;
   return {
