@@ -824,7 +824,7 @@ input[type="color"],
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 20px;
-  color: #989898;
+  color: #333333;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -3499,7 +3499,7 @@ input[type="submit"].btn.btn-mini {
   *z-index: 2;
 }
 .navbar-inner {
-  min-height: 40px;
+  min-height: 35px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #fafafa;
@@ -3538,7 +3538,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   float: left;
   display: block;
-  padding: 10px 20px 10px;
+  padding: 7.5px 20px 7.5px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -3550,7 +3550,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-text {
   margin-bottom: 0;
-  line-height: 40px;
+  line-height: 35px;
 }
 .navbar-link {
   color: #777777;
@@ -3559,14 +3559,14 @@ input[type="submit"].btn.btn-mini {
   color: #333333;
 }
 .navbar .divider-vertical {
-  height: 40px;
+  height: 35px;
   margin: 0 9px;
   border-left: 1px solid #f2f2f2;
   border-right: 1px solid #ffffff;
 }
 .navbar .btn,
 .navbar .btn-group {
-  margin-top: 5px;
+  margin-top: 2.5px;
 }
 .navbar .btn-group .btn,
 .navbar .input-prepend .btn,
@@ -3590,7 +3590,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-form select,
 .navbar-form .radio,
 .navbar-form .checkbox {
-  margin-top: 5px;
+  margin-top: 2.5px;
 }
 .navbar-form input,
 .navbar-form select,
@@ -3615,7 +3615,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-search {
   position: relative;
   float: left;
-  margin-top: 5px;
+  margin-top: 2.5px;
   margin-bottom: 0;
 }
 .navbar-search .search-query {
@@ -3699,7 +3699,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 10px 15px 10px;
+  padding: 7.5px 15px 7.5px;
   color: #777777;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
@@ -4994,48 +4994,51 @@ body,
 #main-container {
   height: 100%;
 }
-#editor,
-#preview {
-  top: 40px;
+#editor-container,
+#preview-container {
+  top: 35px;
   bottom: 0;
   position: fixed;
   box-sizing: border-box;
 }
-#preview {
+#preview-container {
   width: 67%;
   padding: 5px;
 }
-#preview .deck-container {
+#preview-container .deck-container {
   font-size: 1em;
 }
-#editor {
+#editor-container {
   width: 33%;
   right: 0;
   background-color: #f1f1f1;
+  box-shadow: -1px 0px 6px rgba(0, 0, 0, 0.15);
   padding: 5px;
   border-top: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
 }
-#editor header {
+#editor-container header {
   font-weight: bold;
 }
-#editor header .editor-title {
+#editor-container header .editor-title {
   width: 100%;
   text-align: center;
 }
-#editor textarea {
+#editor-container textarea {
   width: 100%;
-  height: 70%;
+  height: 100%;
   resize: none;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
+  background-color: transparent;
+  border: none;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  -webkit-box-shadow: 0px;
-  -moz-box-shadow: 0px;
-  box-shadow: 0px;
+  webkit-box-shadow: inset 0 0 0 !important;
+  -moz-box-shadow: inset 0 0 0 !important;
+  box-shadow: inset 0 0 0 !important;
 }
 #theme-menu .dropdown {
   display: inline-block;
