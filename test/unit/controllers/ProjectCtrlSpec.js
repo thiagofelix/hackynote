@@ -1,6 +1,6 @@
 
 describe('Given the Editor Controller', function(){
-  beforeEach(module('hn.controllers'));
+  beforeEach(module('hn.app'));
 
   var ctrl, scope;
 

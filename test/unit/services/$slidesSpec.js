@@ -1,5 +1,5 @@
 describe('Given the $slides service', function() {
-  beforeEach(module('hn.services'));
+  beforeEach(module('hn.app'));
 
   it('should extract an array of slides from a markdownText', inject(function($slides) {
     var markdown = '#Hello World' + '\n\n\n' + '##HackyNote is Awesome',

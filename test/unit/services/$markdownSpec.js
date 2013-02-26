@@ -1,5 +1,5 @@
 describe('Given the $markdown service', function() {
-  beforeEach(module('hn.services'));
+  beforeEach(module('hn.app'));
 
   it('should make html from a markdownText', inject(function($markdown) {
     var markdown = '#Hello World',

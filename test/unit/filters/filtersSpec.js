@@ -1,5 +1,5 @@
 describe('filter', function() {
-  beforeEach(module('hn.filters'));
+  beforeEach(module('hn.app'));
 
 
   describe('interpolate', function() {

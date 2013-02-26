@@ -1,5 +1,5 @@
 describe('directives', function() {
-  beforeEach(module('hn.directives'));
+  beforeEach(module('hn.app'));
 
   describe('app-version', function() {
     it('should print current version', function() {
