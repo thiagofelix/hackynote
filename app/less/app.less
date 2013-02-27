@@ -11,29 +11,15 @@ body,
 
 
 #editor-container, #preview-container {
-  top: 45px;
+  top: 48px;
   bottom: 0;
   position: fixed;
   box-sizing: border-box;
 }
 
-#theme-menu {
-  box-shadow: 1px 1px 6px rgba(0,0,0,0.15);
-  padding: 0;
-  border-top: 1px solid @grayLight;
-  border-left: 1px solid @grayLight;
-  border-bottom: 1px solid @grayLight;
-  .dropdown {
-    display: inline-block;
-    margin: 0 10px;
-    margin: 10px;
-  }
-}
-
 #preview-container {
-  top: 85px;
   width: 67%;
-  padding: 5px;
+  padding: 0px;
   min-width: 600px;
   .deck-container {
     font-size: 1em;
@@ -45,11 +31,12 @@ body,
   min-width: 400px;
   right: 0;
   background-color: @grayLighter;
-  box-shadow: -1px 0px 6px rgba(0,0,0,0.15);
+  .box-shadow(-2px 0px 4px rgba(0,0,0,.065));
   padding: 0;
   border-top: 1px solid @grayLight;
   border-left: 1px solid @grayLight;
   border-bottom: 1px solid @grayLight;
+  z-index: @zindexModal;
 
   header {
     font-weight: bold;
@@ -73,9 +60,9 @@ body,
   top: -100px;
   right: 0;
   z-index: @zindexModal;
-  opacity: .3;
+  opacity: .6;
   &:hover{
-    opacity: .6;
+    opacity: 1;
   }
   a {
     color: @textColor;
@@ -87,7 +74,6 @@ body,
 .list-no-style {
   list-style: none;
 }
-
 
 body.edit {
   .btn-back-edit {

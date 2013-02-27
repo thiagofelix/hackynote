@@ -56,10 +56,10 @@ HN.controller('TransitionsCtrl',['$scope', function($scope){
   $scope.transition = {};
   $scope.transition.list = [{
     src: "lib/deck.js/themes/transition/horizontal-slide.css",
-    name: "Horizontal Slide"
+    name: "Horizontal"
   },{
     src: "lib/deck.js/themes/transition/vertical-slide.css",
-    name: "Vertical Slide"
+    name: "Vertical"
   },{
     src: "lib/deck.js/themes/transition/fade.css",
     name: "Fade"

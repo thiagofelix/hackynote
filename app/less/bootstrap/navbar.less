@@ -83,8 +83,8 @@
 .navbar .divider-vertical {
   height: @navbarHeight;
   margin: 0 9px;
-  border-left: 1px solid @navbarBackground;
-  border-right: 1px solid @navbarBackgroundHighlight;
+  border-left: 1px solid darken(@navbarBackground,1%);
+  border-right: 1px solid darken(@navbarBackgroundHighlight,3%);
 }
 
 // Buttons in navbar
@@ -250,7 +250,7 @@
 // Hover
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  background-color: @navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover from .active
+  //background-color: @navbarLinkBackgroundHover; // "transparent" is default to differentiate :hover/:focus from .active
   color: @navbarLinkColorHover;
   text-decoration: none;
 }

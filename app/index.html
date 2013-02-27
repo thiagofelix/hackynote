@@ -2,7 +2,7 @@
 <html lang="en" ng-app="hn">
 <head>
   <meta charset="utf-8">
-  <title>Hacky Note - Easy slide presentations</title>
+  <title>Hacky Note - Presentations made by hackers</title>
 
   <!-- Deck.js -->
   <!-- Core and extension CSS files -->
@@ -29,16 +29,44 @@
 </head>
 <body ng-controller="AppCtrl" ng-class="mode">
 
-  <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container-fluid">
         <a class="brand" href="#project">Hacky<strong>Note</strong></a>
         <ul class="nav pull-right">
+          <li class="divider-vertical"></li>
           <li>
-            <button href="#" ng-click="preview()" class="btn btn-play">
-             Preview
-            </button>
+            <a href="#" ng-click="preview()" class="btn-play">
+             <strong>Preview</strong>
+            </a>
           </li>
+        </ul>
+        <ul class="nav">
+          <li class="divider-vertical"></li>
+          <li class="dropdown" ng-controller="ThemesCtrl">
+            <a class="dropdown-toggle" ng-href="#">
+              Theme <strong ng-bind="theme.current.name"></strong>
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li ng-repeat="t in theme.list">
+                <a ng-href="#" ng-click="setTheme(t)">{{t.name}}</a>
+              </li>
+            </ul>
+          </li>
+          <li class="divider-vertical"></li>
+          <li class="dropdown" ng-controller="TransitionsCtrl">
+            <a class="dropdown-toggle" ng-href="#">
+              Transition <strong ng-bind="transition.current.name"></strong>
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li ng-repeat="t in transition.list">
+                <a ng-href="#" ng-click="setTransition(t)">{{t.name}}</a>
+              </li>
+            </ul>
+          </li>
+          <li class="divider-vertical"></li>
         </ul>
       </div>
     </div>
