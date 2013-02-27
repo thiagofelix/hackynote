@@ -27,7 +27,7 @@
   <script src="lib/deck.js/modernizr.custom.js"></script>
 
 </head>
-<body>
+<body ng-controller="AppCtrl" ng-class="mode">
 
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
@@ -35,7 +35,9 @@
         <a class="brand" href="#project">Hacky <strong>Note</strong></a>
         <ul class="nav pull-right">
           <li>
-            <!-- <button href="#" ng-click="publish()" class="btn btn-primary">Publish</button> -->
+            <button href="#" ng-click="preview()" class="btn btn-primary btn-play">
+             Preview
+            </button>
           </li>
         </ul>
       </div>
@@ -45,6 +47,10 @@
   <div id="main-container">
     <div ng-view></div>
   </div>
+
+  <span class="label inverse btn-back-edit">
+    <a href="#" ng-click="backToEdit()">Back to edit</a>
+  </span>
 
   <div>HackyNote version: <span app-version></span></div>
 

@@ -42,7 +42,7 @@ HN.directive('preview',['$timeout', '$slides', function($timeout, $slides){
     replace: true,
     templateUrl: 'partials/preview/preview.html',
     scope:{ markdown: "=" },
-    link: function(scope) {
+    link: function(scope, element) {
 
       $(document).bind('deck.change', function(event, from, to){
         currentSlide = to;
@@ -51,11 +51,17 @@ HN.directive('preview',['$timeout', '$slides', function($timeout, $slides){
       scope.$watch('markdown', function(markdownText){
         markdownText = markdownText || "";
         scope.slides = $slides.fromMarkdown(markdownText);
+
+        //TODO: Stop hiding/show element.
+        //It is happening to avoit a flick effect while plugin's call
+        //happens
+        element.hide();
         $timeout(function(){
           $.deck('.slide');
           if(currentSlide){
             $.deck('go', currentSlide);
           }
+          element.show();
         });
       });
     }
