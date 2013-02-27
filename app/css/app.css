@@ -4996,7 +4996,7 @@ body,
 }
 #editor-container,
 #preview-container {
-  top: 35px;
+  top: 45px;
   bottom: 0;
   position: fixed;
   box-sizing: border-box;
