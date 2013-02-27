@@ -19,7 +19,23 @@ I wrote HackyNote while i was reading **Clean Code** book from uncle book, so th
 This is the nature of HackyNote, it's more valuable to delivery a very well crafted refactoring thats makes the code cleaner than a bunch of new features that decrement the code quality.
 
 
-##Credits
+Adding Themes & Transitions
+----------------------
+1.  Fork this repository.
+2.  Add your theme or transitions css to 'themes/[yourthemenamehere].css' or 'transitions/[yourthemenamehere].css'
+3.  Add an entry to `themes.json` or 'transitions.json' with these properties:
+
+        {
+          "name": "My Theme",  // name of transition/theme ( will be displayied under the menu )
+          "css": "themes/my_theme.css" // file of transition/theme ( will be loaded by the app )
+          ]
+        }
+4.  Make sure that it looks alright by running `./scripts/web-server.js` (requires Node.js)
+5.  Send a pull request
+
+
+Credits
+----------------------
 **HackyNote** uses same outstanding libraries, created by real amazing people, and without these guys this project probably would never exists.
 Big thanks to everyone.
 
@@ -29,8 +45,8 @@ Big thanks to everyone.
 + [twitter bootstrap](twitter.github.com/bootstrap/) - Gives to the HackyNote a decent visual design =)
 
 
-
-## Copyright / License
+Copyright / License
+----------------------
 
 Copyright 2013 Civilized Discourse Construction Kit, Inc.
 

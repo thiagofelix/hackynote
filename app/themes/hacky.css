@@ -123,7 +123,7 @@
  */
 .deck-container .slide pre {
   border-color: #cde;
-  background: #fff;
+  background: #F6F6F6;
   position: relative;
   z-index: auto;
   /* http://nicolasgallagher.com/css-drop-shadows-without-images/ */

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Horizontal",
+    "css": "transitions/horizontal-slide.css"
+  },
+  {
+    "name": "Vertical",
+    "css": "transitions/vertical-slide.css"
+  },
+  {
+    "name": "Fade",
+    "css": "transitions/fade.css"
+  }
+]
