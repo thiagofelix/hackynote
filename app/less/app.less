@@ -1,7 +1,7 @@
 @import "bootstrap/bootstrap.less";
 
 body {
-  padding-top: 40px;
+  padding-top: 45px;
 }
 
 body,
@@ -17,9 +17,24 @@ body,
   box-sizing: border-box;
 }
 
+#theme-menu {
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.15);
+  padding: 0;
+  border-top: 1px solid @grayLight;
+  border-left: 1px solid @grayLight;
+  border-bottom: 1px solid @grayLight;
+  .dropdown {
+    display: inline-block;
+    margin: 0 10px;
+    margin: 10px;
+  }
+}
+
 #preview-container {
+  top: 85px;
   width: 67%;
   padding: 5px;
+  min-width: 600px;
   .deck-container {
     font-size: 1em;
   }
@@ -27,6 +42,7 @@ body,
 
 #editor-container {
   width: 33%;
+  min-width: 400px;
   right: 0;
   background-color: @grayLighter;
   box-shadow: -1px 0px 6px rgba(0,0,0,0.15);
@@ -44,25 +60,13 @@ body,
     }
     border-bottom: 1px solid @grayLight;
   }
-  textarea {
-    width: 100%;
-    height: 100%;
-    resize: none;
-    border: 1px solid @grayLight;
-    box-sizing: border-box;
-    background-color: transparent;
-    border: none;
-    .border-radius(0px);
-    webkit-box-shadow: inset 0 0 0 !important;
-    -moz-box-shadow: inset 0 0 0 !important;
-    box-shadow: inset 0 0 0 !important;
-  }
   .ace_editor {
-    height: 100%;
+    position: absolute;
+    top: 42px;
+    bottom: 0;
     width: 100%;
   }
 }
-
 
 .btn-back-edit {
   position: fixed;
@@ -80,6 +84,11 @@ body,
   .transition(top .5s)
 }
 
+.list-no-style {
+  list-style: none;
+}
+
+
 body.edit {
   .btn-back-edit {
     display: none;
@@ -87,6 +96,7 @@ body.edit {
 }
 body.preview {
   #editor-container,
+  #theme-menu,
   .navbar,
   .btn-play {
     display: none;
