@@ -1,0 +1,15 @@
+{
+  "author": {
+    "name": "https://github.com/angular-ui/bootstrap/graphs/contributors"
+  },
+  "name": "angular-ui-bootstrap-bower",
+  "version": "0.2.0",
+  "gitHead": "d88dfef402398ed83fbd63799db59c08fed8fb3b",
+  "_id": "angular-bootstrap@0.2.0",
+  "readme": "ERROR: No README.md file found!",
+  "description": "ERROR: No README.md file found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angular-ui/bootstrap-bower"
+  }
+}

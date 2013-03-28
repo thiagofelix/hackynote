@@ -6,11 +6,17 @@ HN.log = angular.module('hn.log', []);
 angular.module('hn', ['hn.app', 'ngSanitize', 'ui.bootstrap']).
   config(['$routeProvider', function($routeProvider) {
 
-    $routeProvider.when('/editor', {
+    $routeProvider.when('/', {
       templateUrl: 'partials/page/editor.html',
-      controller: "EditorCtrl",
-      reloadOnSearch: false
+      controller: 'EditorCtrl'
     });
 
-    $routeProvider.otherwise({redirectTo: '/editor'});
+    // Gist route is not working yet because i need a way to authenticate the user
+    // $routeProvider.when('/gist/:id', {
+    //   templateUrl: 'partials/page/editor.html',
+    //   controller: 'GistEditorCtrl'
+    // });
+
+    $routeProvider.otherwise({redirectTo: '/'});
+
   }]);

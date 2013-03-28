@@ -5,6 +5,10 @@
     "bootstrap": "~2.3.0",
     "deck.js": "latest",
     "showdown": "~0.3.1",
-    "marked": "~0.2.8"
+    "marked": "~0.2.8",
+    "github": "~0.7.0",
+    "underscore": "~1.4.4",
+    "base64": "~0.1.1",
+    "angular-ui-bootstrap-bower": "~0.2.0"
   }
 }
