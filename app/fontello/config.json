@@ -1,0 +1,48 @@
+{
+  "name": "",
+  "glyphs": [
+    {
+      "search": [
+        "load",
+        "progress",
+        "wait"
+      ],
+      "code": 59440,
+      "meta": {
+        "email": "berbentseva_angela@yahoo.com",
+        "author": "Angela Berbentseva, specially for fontello"
+      },
+      "uid": "72109d2fb3088d0e66ea6a9204297651",
+      "css-ext": "animate-spin",
+      "css": "spin1",
+      "orig_css": "spin1",
+      "orig_code": 59440,
+      "src": "fontelico",
+      "from": 59440
+    },
+    {
+      "search": [
+        "github"
+      ],
+      "code": 61595,
+      "uid": "0f6a2573a7b6df911ed199bb63717e27",
+      "css": "github-circled",
+      "orig_css": "github-circled",
+      "orig_code": 61595,
+      "src": "fontawesome",
+      "from": 61595
+    },
+    {
+      "search": [
+        "github"
+      ],
+      "code": 61715,
+      "uid": "5e0a374728ffa8d0ae1f331a8f648231",
+      "css": "github",
+      "orig_css": "github",
+      "orig_code": 61715,
+      "src": "fontawesome",
+      "from": 61715
+    }
+  ]
+}

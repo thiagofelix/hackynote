@@ -22,9 +22,15 @@ HN.directive('aceEditor',[function(){
       editor.setTheme("ace/theme/tomorrow");
       editor.getSession().setMode("ace/mode/markdown");
       editor.getSession().on('change',function(){
-        scope.$apply(function(){
+        var phase = scope.$root.$$phase;
+        if(phase == '$apply' || phase == '$digest') {
           ngModel.$setViewValue(editor.getSession().getValue());
-        });
+        } else {
+          scope.$apply(function(){
+            ngModel.$setViewValue(editor.getSession().getValue());
+          });
+        }
+
       });
 
       ngModel.$render = function(){

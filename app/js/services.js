@@ -44,7 +44,29 @@ HN.service('$markdown', ['$showdown', '$marked', function($showdown, $marked){
   this.makeHtml = $marked;
 }]);
 
+HN.service('loading', ['$dialog', function($dialog){
+  var _dialog;
+  var _opts = {
+    backdrop: true,
+    keyboard: false,
+    backdropClick: false,
+    backdropFade: true,
+    dialogClass: 'modal modal-loading',
+    backdropClass: 'modal-backdrop modal-backdrop-loading',
+    template: '<div class="loading"><i class="icon-spin1 animate-spin"></i><b>Loading</b> </div>'
+  };
 
+  this.show = function(){
+    if(_dialog) this.hide();
+
+    _dialog = $dialog.dialog(_opts);
+    _dialog.open();
+  };
+
+  this.hide = function(){
+    _dialog.close();
+  };
+}]);
 /**
  * $slides service
  */
