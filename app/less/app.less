@@ -9,7 +9,6 @@ body,
   height: 100%;
 }
 
-
 #editor-container, #preview-container {
   top: 48px;
   bottom: 0;
@@ -36,7 +35,7 @@ body,
   border-top: 1px solid @grayLight;
   border-left: 1px solid @grayLight;
   border-bottom: 1px solid @grayLight;
-  z-index: @zindexModal;
+  z-index: @zindexPopover;
 
   header {
     font-weight: bold;
@@ -53,6 +52,10 @@ body,
     bottom: 0;
     width: 100%;
   }
+}
+
+#alerts {
+  z-index: @zindexModal;
 }
 
 .btn-back-edit {
@@ -97,4 +100,45 @@ body.preview {
     bottom: 0;
     width: 100%;
   }
+}
+
+[ng-cloak],
+.ng-cloak {
+  display: none;
+}
+
+.loading {
+  font-size: 16px;
+  line-height: 16px;
+  .icon-spin1{
+    width: auto;
+    height: auto;
+    margin-left: -20px;
+    line-height: auto;
+    background-image: none;
+  }
+}
+
+.modal-backdrop.modal-backdrop-loading {
+  background-color: @white;
+  // Fade for backdrop
+  &.fade { opacity: 0; }
+}
+.modal-backdrop.modal-backdrop-loading,
+.modal-backdrop.modal-backdrop-loading.fade.in {
+  .opacity(90);
+}
+// Base modal
+.modal.modal-loading {
+  width: auto;
+  margin: auto;
+  background-color: none;
+  border: none;
+  .border-radius(0);
+  .box-shadow(0 0 0);
+  &.fade {
+    .transition(e('opacity .3s linear, top .3s ease-out'));
+    top: -25%;
+  }
+  &.fade.in { top: 50%; }
 }
