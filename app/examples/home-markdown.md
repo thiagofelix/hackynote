@@ -110,7 +110,7 @@ Inline (titles are optional):
 End
 ====================
 
-Start you next
+Start your next
 ---------------------
-Hack Presentation
+Hacknote Presentation
 ---------------------
