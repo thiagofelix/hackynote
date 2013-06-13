@@ -7,16 +7,16 @@ Presentations made by Hackers
 ##HackyNote
 
 #### What is that?
-Is a **markdown** based presentation creator made for developers.
+It is a **markdown** based presentation creator made for developers.
 
-All that you need to do is access [Hackynote](http://thiagofelix.github.com/hackynote/app/) starting writing markdown in the editor and instantly you will see your presentation being made.
+All that you need to do is access [Hackynote](http://thiagofelix.github.com/hackynote/app/), start writing markdown in the editor and instantly you will see your presentation being made.
 
 ####100% open-source and for fun
-HackyNote is all free for use, the goal is make it popular and recruit people to contribute to the project, push it fowards and make this app helps as much people as possible =D
+HackyNote is free for use, the goal is to make it popular and to recruit people to contribute to the project, push it fowards and make this app help as many people as possible =D
 
 ####Clean Code
-I wrote HackyNote while i was reading **Clean Code** book from uncle book, so this application is all about **quality of code**. It's a try to implements as much good principles of code design as possible.
-This is the nature of HackyNote, it's more valuable to delivery a very well crafted refactoring thats makes the code cleaner than a bunch of new features that decrement the code quality.
+I wrote HackyNote while I was reading [**Clean Code**](http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) book from uncle Bob, so this application is all about **quality of code**. It's an attempt to implements as many good principles of code design as possible.
+This is the nature of HackyNote, it's more valuable to deliver a very well crafted refactoring thats makes the code cleaner than a bunch of new features that decrement the code quality.
 
 
 Adding Themes & Transitions
