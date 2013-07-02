@@ -4,6 +4,10 @@
     "css": "themes/hacky.css"
   },
   {
+    "name": "Agile",
+    "css": "themes/agile.css"
+  },
+  {
     "name": "Neon",
     "css": "themes/neon.css"
   },
