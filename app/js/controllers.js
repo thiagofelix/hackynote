@@ -75,7 +75,7 @@ HN.controller('ThemesCtrl',['$scope', '$http', function($scope, $http){
 
 		$http.get('themes.json').then(function(response){
 			$scope.theme = { list: response.data };
-			$scope.theme.list.push({src: "",name: "None"});
+			$scope.theme.list.push({css: "",name: "None"});
 			$scope.setTheme(response.data[0]);
 		});
 
@@ -89,7 +89,7 @@ HN.controller('TransitionsCtrl',['$scope', '$http', function($scope, $http){
 
 	$http.get('transitions.json').then(function(response){
 			$scope.transition = { list: response.data };
-			$scope.transition.list.push({src: "",name: "None"});
+			$scope.transition.list.push({css: "",name: "None"});
 			$scope.setTransition(response.data[0]);
 		});
 }]);
